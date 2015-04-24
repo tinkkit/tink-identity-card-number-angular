@@ -23,8 +23,8 @@
     "angular-route": "~1.3.12",
     "jquery": "~2.1.3",
     "tink-core": "latest",
-    "tink-helper-format-angular":"latest",
-    "tink-helper-safe-apply-angular":"latest"
+    "tink-helper-format-angular": "latest",
+    "tink-helper-safe-apply-angular": "latest"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.12",
