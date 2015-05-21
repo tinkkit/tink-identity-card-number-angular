@@ -6,7 +6,7 @@ v1.0.0
 
 The Tink Angular identity card number directive provides you with an input field preformatted for identity card numbers.
 
-Tink is an in-house developed easy-to-use front end framework for quick prototyping and simple deployment of all kinds of websites and apps, keeping a uniform and consistent look and feel.
+Tink is an in-house developed easy-to-use front-end framework for quick prototyping and simple deployment of all kinds of websites and apps, keeping a uniform and consistent look and feel.
 
 ## Setup
 
@@ -18,11 +18,58 @@ Tink is an in-house developed easy-to-use front end framework for quick prototyp
 ### Install
 
 1. Go to the root of your project and type the following command in your terminal:
-   `bower install tink-identity-card-number-angular --save`
 
-2. Include `dist/tink-identity-card-number-angular.js` and its necessary dependencies in your project.
+  `bower install tink-identity-card-number-angular --save`
 
-3. On http://tink.digipolis.be you will find all necessary documentation.
+2. Add the following files to your project:
+
+  `<link rel="stylesheet" href="bower_components/tink-core/dist/tink.css" />` (or one of the Tink themes)
+
+  `<script src="bower_components/tink-accordion-angular/dist/tink-identity-card-number-angular.js"></script>`
+
+
+----------
+
+
+## How to use
+
+### tink-identity-card-number
+
+### Component
+
+###### Inputfield code: ######
+```html
+<tink-identity-number required="required" name="identityNoField" data-ng-model="identityNoModel"></tink-identity-number>
+```
+
+###### Validation code: ######
+```html
+<div class="container" data-ng-controller="identityNoCtrl">
+  <form name="identityNoForm" novalidate="">
+    <div class="row form-group" data-ng-class="{'has-error':(identityNoForm.identityNoField.$dirty || identityNoForm.submitted) && identityNoForm.identityNoField.$invalid,'has-success': (identityNoForm.identityNoField.$dirty || identityNoForm.submitted) && identityNoForm.identityNoField.$valid}">
+      <div class="col-xs-12">
+        <label for="tink-username-example">Identity card number</label>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="validation">
+          <tink-identity-number required="required" name="identityNoField" data-ng-model="identityNoModel"></tink-identity-number>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="messages" data-ng-messages="identityNoForm.identityNoField.$error" data-ng-if="(identityNoForm.identityNoField.$dirty || identityNoForm.submitted)">
+          <div class="text-danger" data-ng-message="required">Fill in your identity card number.</div>
+          <div class="text-danger" data-ng-message="format">Fill in a valid identity card number.</div>
+        </div>
+      </div>
+    </div>
+    <div class="row form-group">
+      <div class="col-xs-12">
+        <button data-ng-click="validateIdentityNo()" type="button" class="btn-primary">Validate</button>
+      </div>
+    </div>
+  </form>
+</div>
+```
 
 ## Contribution guidelines
 
