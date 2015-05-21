@@ -37,12 +37,14 @@ Tink is an in-house developed easy-to-use front-end framework for quick prototyp
 
 ### Component
 
-###### Inputfield code: ######
 ```html
 <tink-identity-number required="required" name="identityNoField" data-ng-model="identityNoModel"></tink-identity-number>
 ```
 
-###### Validation code: ######
+###Examples
+
+###### Example of validation code: ######
+
 ```html
 <div class="container" data-ng-controller="identityNoCtrl">
   <form name="identityNoForm" novalidate="">
