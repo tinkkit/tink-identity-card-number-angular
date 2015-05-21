@@ -33,7 +33,7 @@ Tink is an in-house developed easy-to-use front-end framework for quick prototyp
 
 ## How to use
 
-### tink-identity-card-number
+### tink-identity-number
 
 ### Component
 
