@@ -43,7 +43,7 @@ Tink is an in-house developed easy-to-use front-end framework for quick prototyp
 
 ###Example
 
-###### Validation code: ######
+###### Possible validation code: ######
 
 ```html
 <div class="container" data-ng-controller="identityNoCtrl">
