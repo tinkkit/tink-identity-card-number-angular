@@ -4,7 +4,7 @@ v1.0.0
 
 ## What is this repository for?
 
-The Tink Angular identity card number directive provides you with an input field preformatted for identity card numbers.
+The Tink Angular identity card number directive provides you with an input field preformatted for Belgian identity card numbers.
 
 Tink is an in-house developed easy-to-use front-end framework for quick prototyping and simple deployment of all kinds of websites and apps, keeping a uniform and consistent look and feel.
 
