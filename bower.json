@@ -1,6 +1,6 @@
 {
   "name": "tink-identity-card-number-angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": [
     "dist/tink-identity-card-number-angular.js"
   ],

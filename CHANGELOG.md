@@ -16,6 +16,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 
+## [1.0.1] - 2015-06-08
+
+### Changed
+- Updated reference to the external style sheet
+- Updated documentation
+
+
+
 ## [1.0.0] - 2015-04-23
 
 Initial release

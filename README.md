@@ -1,6 +1,6 @@
 # Tink identity card number Angular directive
 
-v1.0.0
+v1.0.1
 
 ## What is this repository for?
 
@@ -26,6 +26,11 @@ Tink is an in-house developed easy-to-use front-end framework for quick prototyp
   `<link rel="stylesheet" href="bower_components/tink-core/dist/tink.css" />` (or one of the Tink themes)
 
   `<script src="bower_components/tink-identity-card-number-angular/dist/tink-identity-card-number-angular.js"></script>`
+
+3. Add `tink.identitycardnumber` to your app module's dependency.
+
+  `angular.module('myApp', ['tink.identitycardnumber']);`
+
 
 
 ----------
@@ -77,7 +82,7 @@ Tink is an in-house developed easy-to-use front-end framework for quick prototyp
 
 Attr | Type | Default | Details
 --- | --- | --- | ---
-data-ng-model (required) | `[object]` | `[]` | This variable holds the preformatted text. 
+data-ng-model (required) | `[object]` | `[]` | This variable holds the preformatted text.
 
 ## Contribution guidelines
 

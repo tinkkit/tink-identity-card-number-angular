@@ -1,7 +1,7 @@
 {
   "name": "tink-identity-card-number-angular",
   "description": "Tink identity card number Angular directive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:tinkkit/tink-identity-card-number-angular.git"
