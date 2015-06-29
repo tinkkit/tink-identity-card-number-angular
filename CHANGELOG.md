@@ -14,7 +14,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Security
 -->
 
+## [1.0.2] - 2015-06-29
 
+### Fixed
+- the first check of valdity
 
 ## [1.0.2] - 2015-06-10
 

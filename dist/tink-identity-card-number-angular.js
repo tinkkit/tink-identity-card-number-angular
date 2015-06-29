@@ -70,13 +70,14 @@
             }else{
               value = controller.getValue();
             }
-            checkvalidty(value);
+            
               if(isRRNoValid(value)){
                 ngControl.$setViewValue(value);
                 ngControl.$render();
               }else{
                  ngControl.$setViewValue(null);
               }
+              checkvalidty(value);
               /*if(value === 'xx.xx.xx-xxx.xx' || value === ''){
                 ngControl.$setViewValue(null);
               }*/
