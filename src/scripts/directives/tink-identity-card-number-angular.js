@@ -10,6 +10,10 @@
       restrict:'AE',
       controller:'tinkFormatController',
       require:['tinkIdentityNumber','ngModel','?^form'],
+      controllerAs:'ctrl',
+      scope:{
+
+      },
       template: function() {
         var isNative = /(ip(a|o)d|iphone|android)/ig.test($window.navigator.userAgent);
         var isTouch = ('createTouch' in $window.document) && isNative;
