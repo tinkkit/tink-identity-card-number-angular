@@ -1,6 +1,6 @@
 # Tink identity card number Angular directive
 
-v1.0.4
+v1.0.5
 
 ## What is this repository for?
 

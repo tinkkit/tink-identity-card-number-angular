@@ -21,8 +21,9 @@
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
-<script src="bower_components/tink-helper-format-angular/dist/tink-helper-format-angular.js"></script>
+<script src="bower_components/tink-helper-date-angular/dist/tink-helper-date-angular.js"></script>
 <script src="bower_components/tink-helper-safe-apply-angular/dist/tink-helper-safe-apply-angular.js"></script>
+<script src="bower_components/tink-helper-format-angular/dist/tink-helper-format-angular.js"></script>
 <!-- endbower -->
 <script>
   var app = angular.module('tink.app',['tink.identitycardnumber']);
@@ -60,7 +61,7 @@
           </div>
           <div class="col-xs-12 col-sm-6">
             <div class="validation">
-              <tink-identity-number required="required" name="nationalNoField" data-ng-model="nationalNoModel"></tink-identity-number>
+              <tink-identity-number is-disabled="true" required="required" name="nationalNoField" data-ng-model="nationalNoModel"></tink-identity-number>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6">
