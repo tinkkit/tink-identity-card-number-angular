@@ -12,7 +12,7 @@
       require:['tinkIdentityNumber','ngModel','?^form'],
       controllerAs:'ctrl',
       scope:{
-        isDisabled:'='
+        isDisabled:'=?'
       },
       template: function() {
         var isNative = /(ip(a|o)d|iphone|android)/ig.test($window.navigator.userAgent);
@@ -55,13 +55,29 @@
               }
             }else{
               modelValue = null;
-              ngControl.$setViewValue(modelValue);
+              ngControl.$setViewValue();
             }
             checkvalidty(modelValue);
 
           }
           return modelValue;
          });
+
+        elm.bind('focus',function(){
+          element.focus();
+        });
+
+         var prevValue;
+        element.bind('valueChanged', function (e, val) {
+          //We put this in a safeaply because we are out of the angular scope !
+          safeApply(scope, function () {
+            //Check if the date we received is a valid date.
+            if(ctrl[1] && prevValue !== val){
+              ctrl[1].$setDirty();
+            }
+            prevValue = val;
+          });
+        });
 
          element.unbind('input').unbind('keydown').unbind('change');
         //on blur update the model.
@@ -78,7 +94,7 @@
                 ngControl.$setViewValue(value);
                 ngControl.$render();
               }else{
-                 ngControl.$setViewValue(null);
+                 ngControl.$setViewValue();
               }
               checkvalidty(value);
               /*if(value === 'xx.xx.xx-xxx.xx' || value === ''){
@@ -156,4 +172,4 @@
       }
     };
   }]);
-})()
+})();
